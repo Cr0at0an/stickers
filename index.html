@@ -774,7 +774,7 @@ function stickers_print() {
 			if(matrix[i][0] == goods[j][0])	vh=j;
 		}
 
-		if (vh==0) {
+		if (vh==0 && matrix[i][0] != "") {
 			document.getElementById('error').innerHTML = document.getElementById('error').innerHTML+matrix[i][0]+" - не опознанный элемент"+"<br>";
 		} else {
 			if (goods[vh][2] == 1) {
